@@ -50,9 +50,9 @@ aissemble-hive-metastore-service-chart:
     auth:
       # Note: Changing these values requires removal of the `hive-metastore-db-0` PVC, or manual modification of the
       # persisted database.
-      rootPassword: $getConfigValue(groupName=spark-infrastructure;propertyName=metastore.db.password)
-      replicationPassword: $getConfigValue(groupName=spark-infrastructure;propertyName=metastore.db.password)
-      password: $getConfigValue(groupName=spark-infrastructure;propertyName=metastore.db.password)
+      rootPassword: hive2
+      replicationPassword: hive2
+      password: hive2
 
   deployment:
     env:
